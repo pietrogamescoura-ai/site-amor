@@ -1,0 +1,44 @@
+!DOCTYPE html
+html lang=pt-BR
+head
+  meta charset=UTF-8
+  titlePietro 💕 Meu Amortitle
+  link rel=stylesheet href=style.css
+head
+body
+  div class=heartsdiv
+
+  header
+    h1Pietro 💕 Meu Amorh1
+    p2 meses de uma história que só melhora a cada capítulo.p
+  header
+
+  section class=mensagem
+    pHá 2 meses, o universo decidiu juntar dois corações que batem no mesmo ritmo.p
+    pVocê é meu refúgio, meu sorriso mais sincero e o motivo de cada pensamento bobo que me faz sorrir.p
+    pEu te amo mais do que qualquer frase poderia expressar, e ainda assim, tento escrever todas.p
+    pObrigado por ser a melhor parte dos meus dias, Meu Amor. 💖p
+  section
+
+  footer
+    pCom amor, Pietro 💌p
+  footer
+
+  script
+     Animação de corações flutuando 💕
+    const heartsContainer = document.querySelector('.hearts');
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random()  100 + 'vw';
+      heart.style.animationDuration = (3 + Math.random()  5) + 's';
+      heartsContainer.appendChild(heart);
+
+      setTimeout(() = heart.remove(), 8000);
+    }
+
+    setInterval(createHeart, 400);
+  script
+body
+html
